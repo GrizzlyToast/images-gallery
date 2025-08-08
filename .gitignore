@@ -1,6 +1,12 @@
 # misc
 .DS_Store
+# variables from `.local` are inserted in all environments
 .env.local
+# variables from `.local.development` are inserted in development environments
 .env.development.local
+# variables from `.local.test` are inserted in test environments
 .env.test.local
+# variables from `.local.production` are inserted in production environments
 .env.production.local
+
+# NOTE: the `.env` files above are not initially created when running `create-react-app`

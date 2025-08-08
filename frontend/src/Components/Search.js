@@ -10,8 +10,8 @@ function Search({ search, setSearch, handleSubmit }) {
               <Col xs={9}>
                 <Form.Control
                   type="text"
-                  // value={search}
-                  // onChange={(e) => setSearch(e.target.value)}
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
                   placeholder="Search for image..."
                 />
               </Col>
