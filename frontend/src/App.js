@@ -11,6 +11,7 @@ function App() {
   function handleSearchSubmit(e) {
     e.preventDefault();
     console.log(search);
+    // fetch utilizes GET request by default
     fetch(
       `https://api.unsplash.com/photos/random/?query=${search}&client_id=${UNSPLASH_KEY}`
     )
@@ -21,6 +22,7 @@ function App() {
       .catch((err) => {
         console.log(err);
       });
+    setSearch("");
   }
 
   return (
